@@ -7,6 +7,9 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: flex-end;
+  justify-items: flex-end;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
   height: 64px;
   line-height: 64px;
@@ -34,4 +37,17 @@ header ul li a {
 
 header ul li a:hover {
   border-bottom: 1px solid #333;
+}
+
+.skip-to-content-link {
+  height: 30px;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  top: .625rem;
+  left: .625rem;
+}
+
+.skip-to-content-link:focus {
+  clip: auto;
+  overflow: visible;  
 }
